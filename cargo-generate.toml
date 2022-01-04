@@ -1,0 +1,7 @@
+[placeholders.app_name]
+type = "string"
+prompt = "What should be name of your app? (it will be displayed in the app menu)"
+
+[placeholders.package_name]
+type = "string"
+prompt = "What should be the package name for your app? (com.example.myapp)"
