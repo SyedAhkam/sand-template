@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-target=aarch64-linux-android
-output_dir=android/jniLibs
+TARGETS=-t\ armeabi-v7a\ -t\ arm64-v8a
+OUTPUT=android/app/src/main/jniLibs
 
-cargo ndk -t $target -o $output_dir build
+cargo ndk $TARGETS -o "$OUTPUT" build

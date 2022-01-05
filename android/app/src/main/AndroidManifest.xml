@@ -9,15 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.{{ app_name | capitalize }}">
-        <meta-data android:name="android.app.lib_name"
-                 android:value="{{ project-name }}" />
+
         <activity android:name=".SandActivity">
+            <meta-data android:name="android.app.lib_name" android:value="{{ project-name }}" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+    </application>
 </manifest>
