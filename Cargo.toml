@@ -10,4 +10,5 @@ crate-type = ["lib", "cdylib"]
 
 [dependencies]
 sand = { git="https://github.com/SyedAhkam/sand" }
-ndk-glue = "0.5"
+ndk-glue = { version="0.5", features="logger" }
+log = "0.4"

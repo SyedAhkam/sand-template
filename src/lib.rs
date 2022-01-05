@@ -1,4 +1,5 @@
 use sand::{run_app, Widget, StatelessWidget, BuildContext};
+use log::*;
 
 #[derive(Debug)]
 struct MyApp;
@@ -11,7 +12,10 @@ impl Widget for MyApp {
 
 impl StatelessWidget for MyApp {}
 
-#[cfg_attr(target_os = "android", ndk_glue::main(backtrace = "on"))]
+#[cfg_attr(
+    target_os = "android",
+    ndk_glue::main(backtrace = "on", logger(level="debug", tag="{{ app_name | capitalize }}"))
+)]
 fn main() {
     sand::run_app(MyApp);
 }
