@@ -11,7 +11,7 @@ impl Widget for MyApp {
 
 impl StatelessWidget for MyApp {}
 
-#[cfg_attr(target_os = "android", sand::main(backtrace = "on"))]
+#[cfg_attr(target_os = "android", ndk_glue::main(backtrace = "on"))]
 fn main() {
     sand::run_app(MyApp);
 }
