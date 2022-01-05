@@ -1,4 +1,4 @@
-use sand::run_app, Widget, StatelessWidget, BuildContext};
+use sand::{run_app, Widget, StatelessWidget, BuildContext};
 
 #[derive(Debug)]
 struct MyApp;
