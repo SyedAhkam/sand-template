@@ -1,14 +1,15 @@
 package {{ package_name }};
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.NativeActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class SandActivity extends NativeActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        android.util.Log.i("SandActivity", "OnCreate");
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 }
