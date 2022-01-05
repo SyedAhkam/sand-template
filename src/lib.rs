@@ -1,4 +1,4 @@
-use sand::{main, run_app, Widget, StatelessWidget, BuildContext};
+use sand::run_app, Widget, StatelessWidget, BuildContext};
 
 #[derive(Debug)]
 struct MyApp;
@@ -11,7 +11,7 @@ impl Widget for MyApp {
 
 impl StatelessWidget for MyApp {}
 
-#[cfg_attr(target_os = "android", main(backtrace = "on"))]
+#[cfg_attr(target_os = "android", sand::main(backtrace = "on"))]
 fn main() {
     sand::run_app(MyApp);
 }
